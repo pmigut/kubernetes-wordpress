@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Steps in this document describe process of Wordpress deployment into GKE Kubernetes cluster, connected to Google Cloud SQL instance with help of Helm chart.
+The steps in this document describe the process of Wordpress deployment into GKE Kubernetes cluster using Google Cloud SQL instance as a DB and with help of a Helm chart.
 
 ## Prerequisites
 
@@ -71,7 +71,7 @@ helm install --name mywp ./wordpress \
   --set wordpressSkipInstall=true
 ```
 
-The chart is based on official stable [Wordpress Helm chart](https://github.com/pmigut/charts/tree/master/stable/wordpress). Additional setup options are available (excluding all mariadb and externaldb options). However, they were not tested in the process of creating this solution.
+The chart is based on the official stable [Wordpress Helm chart](https://github.com/pmigut/charts/tree/master/stable/wordpress). Additional setup options are available (excluding all mariadb and externaldb options). However, they were not tested in the process of creating this solution.
 
 ## Deleting release
 
